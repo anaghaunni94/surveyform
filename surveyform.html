@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>surveyform</title>
+    <link rel="stylesheet" type="text/css" href="surveyform.css">
+</head>
+<body>
+    <div>
+    <h1>freeCodeCamp Survey Form</h1>
+    <p class="clr prpty">Thank you for taking the time to help us improve the platform</p>
+    </div>
+    <div class="sform brd clr">
+      <form action="surveyform.html" method="POST">
+          <label for="name">Name</label><br>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+          <label for="mail">Email</label><br>
+          <input type="email" id="mail" name="mail" placeholder="Enter your mail" required><br>
+          <label for="age">Age(optional)</label><br>
+          <input type="number" id="age" name="age" placeholder="Age"><br>
+          <label for="role">Which option best describes your current role?</label><br>
+          <select id="role">
+            <option>select current role</option>
+            <option>student</option>
+            <option>Full time job</option>
+            <option>Full time learner</option>
+            <option>prefernot to say</option>
+            <option>other</option>
+          </select><br>
+          <label for="rec">Would you recommend freeCodeCamp to a friend?</label><br>
+          <input type="radio" id="rec" name="def">Defenitely<br>
+          <input type="radio" id="rec" name="def">Maybe<br>
+          <input type="radio" id="rec" name="def">Not Sure<br>
+          <label for="fav">What is your favorite feature of freeCodeCamp?</label><br>
+          <select id="fav">
+            <option>select an option</option>
+            <option>challenges</option>
+            <option>projects</option>
+            <option>community</option>
+            <option>open source</option>
+          </select><br>
+          <label for="improve">What would you like to see improved? (Check all that apply)</label><br>
+          <input type="checkbox" id="improve" name="imp">Front-end Projects<br>
+          <input type="checkbox" id="improve" name="imp">Back-end Projects<br>
+          <input type="checkbox" id="improve" name="imp">Data Visualization<br>
+          <input type="checkbox" id="improve" name="imp">challenges<br>
+          <input type="checkbox" id="improve" name="imp">Open Source Community<br>
+          <input type="checkbox" id="improve" name="imp">Gitter help rooms<br>
+          <input type="checkbox" id="improve" name="imp">Videos<br>
+          <input type="checkbox" id="improve" name="imp">City Meetups<br>
+          <input type="checkbox" id="improve" name="imp">Wiki<br>
+          <input type="checkbox" id="improve" name="imp">Forum<br>
+          <label for="sugg">Any comments or suggestions?</label><br>
+          <textarea id="sugg"  cols="4" rows="4"></textarea><br>
+          <input type="submit" id="sub" name="sub" value="submit">
+        </form>
+    </div>
+</body>
+</html>
